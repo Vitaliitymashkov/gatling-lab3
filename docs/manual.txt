@@ -15,7 +15,7 @@ localhost:8088/job/PT/job/Gatling-lab3/build?token=StartPerformanceTest1&cause="
 Optionally append &cause=Cause+Text
 
 
-target\gatling\
+test\target\gatling\testfirstbasicapisimulation-20210419134211657\index.html
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 Simulation simulations.TestFirstBasicAPISimulation started...
 
