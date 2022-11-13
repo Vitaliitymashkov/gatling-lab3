@@ -4,8 +4,9 @@ pipeline {
     stages {
         stage('Build') {
                steps {
-                    container ('maven'){
-                    sh 'mvn version'
+                    container ('maven') {
+                        sh 'mvn version'
+                        }
                     }
                 }
         stage("Build Maven 3") {
