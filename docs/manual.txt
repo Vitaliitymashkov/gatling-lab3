@@ -1,5 +1,5 @@
 https://www.linkedin.com/pulse/performance-testing-gatling-jenkins-integration-ashish-khole
-
+https://www.baeldung.com/ops/jenkins-run-gatling-tests
 
 CMD
 mvn archetype:generate -DarchetypeGroupId=io.gatling.highcharts -DarchetypeArtifactId=gatling-highcharts-maven-archetype
