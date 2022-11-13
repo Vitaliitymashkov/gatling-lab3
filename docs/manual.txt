@@ -1,0 +1,445 @@
+https://www.linkedin.com/pulse/performance-testing-gatling-jenkins-integration-ashish-khole
+
+
+CMD
+mvn archetype:generate -DarchetypeGroupId=io.gatling.highcharts -DarchetypeArtifactId=gatling-highcharts-maven-archetype
+mvn clean gatling:test -Dgatling.simulationClass=simulations.TestFirstBasicAPISimulation
+
+POWERSHELL
+mvn archetype:generate "-DarchetypeGroupId=io.gatling.highcharts" "-DarchetypeArtifactId=gatling-highcharts-maven-archetype"
+mvn clean gatling:test "-Dgatling.simulationClass=simulations.TestFirstBasicAPISimulation"
+
+
+
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Simulation simulations.TestFirstBasicAPISimulation started...
+
+================================================================================
+2022-11-13 17:19:29                                           5s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=30     KO=0     )
+> Get all Posts - 1st Call                                 (OK=21     KO=0     )
+> Get Specific Post - 2nd Call                             (OK=9      KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[-----                                                                     ]  0%
+          waiting: 294    / active: 21     / done: 0
+================================================================================
+
+
+================================================================================
+2022-11-13 17:19:39                                          15s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=60     KO=0     )
+> Get all Posts - 1st Call                                 (OK=32     KO=0     )
+> Get Specific Post - 2nd Call                             (OK=21     KO=0     )
+> Get Comments for above post - 3rd call                   (OK=5      KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=2      KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[--------                                                                  ]  0%
+          waiting: 283    / active: 30     / done: 2     
+================================================================================
+
+
+================================================================================
+2022-11-13 17:19:44                                          20s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=99     KO=0     )
+> Get all Posts - 1st Call                                 (OK=44     KO=0     )
+> Get Specific Post - 2nd Call                             (OK=32     KO=0     )
+> Get Comments for above post - 3rd call                   (OK=13     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=10     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[##--------                                                                ]  3%
+          waiting: 271    / active: 34     / done: 10
+================================================================================
+
+
+================================================================================
+2022-11-13 17:19:49                                          25s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=133    KO=0     )
+> Get all Posts - 1st Call                                 (OK=52     KO=0     )
+> Get Specific Post - 2nd Call                             (OK=44     KO=0     )
+> Get Comments for above post - 3rd call                   (OK=20     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=17     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[###---------                                                              ]  5%
+          waiting: 263    / active: 35     / done: 17
+================================================================================
+
+
+================================================================================
+2022-11-13 17:19:54                                          30s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=169    KO=0     )
+> Get all Posts - 1st Call                                 (OK=63     KO=0     )
+> Get Specific Post - 2nd Call                             (OK=52     KO=0     )
+> Get Comments for above post - 3rd call                   (OK=29     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=25     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[#####---------                                                            ]  7%
+          waiting: 252    / active: 38     / done: 25
+================================================================================
+
+
+================================================================================
+2022-11-13 17:19:59                                          35s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=210    KO=0     )
+> Get all Posts - 1st Call                                 (OK=72     KO=0     )
+> Get Specific Post - 2nd Call                             (OK=63     KO=0     )
+> Get Comments for above post - 3rd call                   (OK=39     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=36     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[########---------                                                         ] 11%
+          waiting: 243    / active: 36     / done: 36
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:04                                          40s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=252    KO=0     )
+> Get all Posts - 1st Call                                 (OK=85     KO=0     )
+> Get Specific Post - 2nd Call                             (OK=72     KO=0     )
+> Get Comments for above post - 3rd call                   (OK=49     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=46     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[##########----------                                                      ] 14%
+          waiting: 229    / active: 40     / done: 46
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:09                                          45s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=300    KO=0     )
+> Get all Posts - 1st Call                                 (OK=100    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=85     KO=0     )
+> Get Comments for above post - 3rd call                   (OK=59     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=56     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[#############-----------                                                  ] 17%
+          waiting: 215    / active: 44     / done: 56
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:14                                          50s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=337    KO=0     )
+> Get all Posts - 1st Call                                 (OK=110    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=100    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=66     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=61     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[##############------------                                                ] 19%
+          waiting: 205    / active: 49     / done: 61
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:19                                          55s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=385    KO=0     )
+> Get all Posts - 1st Call                                 (OK=120    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=110    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=81     KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=74     KO=0     )
+================================================================================
+> Get all Posts - 1st Call                                 (OK=133    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=120    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=102    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=94     KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[######################----------                                          ] 29%
+          waiting: 182    / active: 39     / done: 94
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:29                                          65s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=493    KO=0     )
+> Get all Posts - 1st Call                                 (OK=141    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=133    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=113    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=106    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[########################---------                                         ] 33%
+          waiting: 174    / active: 35     / done: 106
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:34                                          70s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=534    KO=0     )
+> Get all Posts - 1st Call                                 (OK=159    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=141    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=119    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=115    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[###########################-----------                                    ] 36%
+          waiting: 156    / active: 44     / done: 115
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:39                                          75s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=595    KO=0     )
+> Get all Posts - 1st Call                                 (OK=179    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=159    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=130    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=127    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[#############################-------------                                ] 40%
+          waiting: 136    / active: 52     / done: 127
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:44                                          80s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=650    KO=0     )
+> Get all Posts - 1st Call                                 (OK=192    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=179    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=142    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=137    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[################################-------------                             ] 43%
+          waiting: 123    / active: 55     / done: 137
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:49                                          85s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=713    KO=0     )
+> Get all Posts - 1st Call                                 (OK=209    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=192    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=159    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=153    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[###################################--------------                         ] 48%
+          waiting: 106    / active: 56     / done: 153
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:54                                          90s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=788    KO=0     )
+> Get all Posts - 1st Call                                 (OK=225    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=209    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=180    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=174    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[########################################------------                      ] 55%
+          waiting: 90     / active: 51     / done: 174
+================================================================================
+
+
+================================================================================
+2022-11-13 17:20:59                                          95s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=847    KO=0     )
+> Get all Posts - 1st Call                                 (OK=239    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=225    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=194    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=189    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[############################################------------                  ] 60%
+          waiting: 76     / active: 50     / done: 189
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:04                                         100s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=899    KO=0     )
+> Get all Posts - 1st Call                                 (OK=246    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=239    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=210    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=204    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[###############################################----------                 ] 64%
+          waiting: 69     / active: 42     / done: 204
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:09                                         105s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=943    KO=0     )
+> Get all Posts - 1st Call                                 (OK=258    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=246    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=223    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=216    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[##################################################-----------             ] 68%
+          waiting: 56     / active: 43     / done: 216
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:14                                         110s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1000   KO=0     )
+> Get all Posts - 1st Call                                 (OK=277    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=258    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=236    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=229    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[#####################################################------------         ] 72%
+          waiting: 38     / active: 48     / done: 229
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:19                                         115s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1057   KO=0     )
+> Get all Posts - 1st Call                                 (OK=293    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=277    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=244    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=243    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[#########################################################------------     ] 77%
+          waiting: 21     / active: 51     / done: 243
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:24                                         120s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1119   KO=0     )
+> Get all Posts - 1st Call                                 (OK=315    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=293    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=257    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=254    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[###########################################################---------------] 80%
+          waiting: 0      / active: 61     / done: 254
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:29                                         125s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1163   KO=0     )
+> Get all Posts - 1st Call                                 (OK=315    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=315    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=268    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=265    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[##############################################################------------] 84%
+          waiting: 0      / active: 50     / done: 265
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:34                                         130s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1203   KO=0     )
+> Get all Posts - 1st Call                                 (OK=315    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=315    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=290    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=283    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[##################################################################--------] 89%
+          waiting: 0      / active: 32     / done: 283
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:39                                         135s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1233   KO=0     )
+> Get all Posts - 1st Call                                 (OK=315    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=315    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=304    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=299    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[######################################################################----] 94%
+          waiting: 0      / active: 16     / done: 299
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:44                                         140s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1247   KO=0     )
+> Get all Posts - 1st Call                                 (OK=315    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=315    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=309    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=308    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[########################################################################--] 97%
+          waiting: 0      / active: 7      / done: 308
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:49                                         145s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1259   KO=0     )
+> Get all Posts - 1st Call                                 (OK=315    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=315    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=315    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=314    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+[#########################################################################-] 99%
+          waiting: 0      / active: 1      / done: 314
+================================================================================
+
+
+================================================================================
+2022-11-13 17:21:50                                         145s elapsed
+---- Requests ------------------------------------------------------------------
+> Global                                                   (OK=1260   KO=0     )
+> Get all Posts - 1st Call                                 (OK=315    KO=0     )
+> Get Specific Post - 2nd Call                             (OK=315    KO=0     )
+> Get Comments for above post - 3rd call                   (OK=315    KO=0     )
+> Add Comment to the Post - 4th Call                       (OK=315    KO=0     )
+
+---- PerfTest Scenario - 4 calls -----------------------------------------------
+Reports generated in 0s.
+Please open the following file: C:\_projects\PT\lab3-gatling-pt\gatling-lab3\target\gatling\testfirstbasicapisimulation-20221113161923863\index.html
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:45 min
+[INFO] Finished at: 2022-11-13T17:21:50+01:00
+[INFO] ------------------------------------------------------------------------
