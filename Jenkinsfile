@@ -5,7 +5,7 @@ pipeline {
         jdk 'java 17.0.4.1'
     }
     stages {
-        stage("Build Maven") {
+        stage("Build Maven 2") {
             steps {
                 sh 'mvn -B clean package'
             }
