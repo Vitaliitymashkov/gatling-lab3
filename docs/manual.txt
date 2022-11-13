@@ -10,10 +10,12 @@ mvn archetype:generate "-DarchetypeGroupId=io.gatling.highcharts" "-DarchetypeAr
 mvn clean gatling:test "-Dgatling.simulationClass=simulations.TestFirstBasicAPISimulation"
 
 
+localhost:8088/job/PT/job/Gatling-lab3/build?token=StartPerformanceTest1&cause="Manual execution"
+ or /buildWithParameters?token=TOKEN_NAME
+Optionally append &cause=Cause+Text
 
 
-
-
+target\gatling\
 +++++++++++++++++++++++++++++++++++++++++++++++++++++
 Simulation simulations.TestFirstBasicAPISimulation started...
 
